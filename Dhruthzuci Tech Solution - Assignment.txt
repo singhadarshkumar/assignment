@@ -1,0 +1,18 @@
+Q2-
+def intersection(arr1, arr2): 
+    return list(set(arr1) & set(arr2)) 
+  
+arr1 = [15, 9, 10, 56, 23, 78, 5, 4, 9] 
+arr2 = [9, 4, 5, 36, 47, 26, 10, 45, 87] 
+print(intersection(arr1, arr2));
+
+Q4-
+def findSingle( ar, n):
+     
+    res = ar[0];
+    for i in range(1,n):
+        res = res ^ ar[i]
+    return res;;
+
+ar = [2, 3, 5, 4, 5, 3, 4];
+print "Single appearence", findSingle(ar, len(ar));
